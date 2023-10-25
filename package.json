@@ -1,0 +1,25 @@
+{
+  "name": "periodic-table-data",
+  "version": "1.0.0",
+  "description": "JSON containing information about periodic table data with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjf8203/periodic-table-data.git"
+  },
+  "keywords": [
+    "periodic",
+    "element",
+    "chemical",
+    "atomic"
+  ],
+  "author": "Jianfeng Song <sjf8203@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjf8203/periodic-table-data/issues"
+  },
+  "homepage": "https://github.com/sjf8203/periodic-table-data#readme"
+}
