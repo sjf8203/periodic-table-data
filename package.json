@@ -1,6 +1,6 @@
 {
   "name": "periodic-table-data",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "JSON containing information about periodic table data with JavaScript",
   "main": "index.js",
   "scripts": {
