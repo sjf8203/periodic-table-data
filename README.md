@@ -73,7 +73,7 @@ console.log(infoByName);
 ``` javascript
 const infoByNumber2 = ptd.numbers[2];
 or
-const infoByNumber2 = ptd.getInfoByAtomicNumber(2);
+const infoByNumber2 = ptd.getInfoByNumber(2);
 console.log(infoByNumber2);
 ```
 ## Data
