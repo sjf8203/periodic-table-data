@@ -1,5 +1,20 @@
 import tableData from "./periodicTableData.json";
 
+let symbols = tableData.reduce(function (obj, element) {
+  obj[element.symbol] = element;
+  return obj;
+}, {});
+
+let names = tableData.reduce(function (obj, element) {
+  obj[element.name] = element;
+  return obj;
+}, {});
+
+let numbers = tableData.reduce(function (obj, element) {
+  obj[element.atomicNumber] = element;
+  return obj;
+}, {});
+
 function getInfoBySymbol(symbol) {
   const elementInfo = tableData.find((item) => item.symbol === symbol);
 
@@ -16,7 +31,7 @@ function getInfoByName(name) {
   return elementInfo;
 }
 
-function getInfoByAtomicNumber(atomicNumber) {
+function getInfoByNumber(atomicNumber) {
   const elementInfo = tableData.find(
     (item) => item.atomicNumber === atomicNumber
   );
@@ -26,4 +41,12 @@ function getInfoByAtomicNumber(atomicNumber) {
   return elementInfo;
 }
 
-export { tableData, getInfoByName, getInfoBySymbol, getInfoByAtomicNumber };
+export {
+  tableData,
+  symbols,
+  names,
+  numbers,
+  getInfoBySymbol,
+  getInfoByName,
+  getInfoByNumber,
+};

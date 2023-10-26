@@ -4,11 +4,11 @@ JSON containing information about periodic table data with JavaScript
 ## Usage
 import the package：
 ``` javascript
-import * as elements from 'periodic-table-data';
+import * as ptd from 'periodic-table-data';
 ```
 (1) get all data:
 ``` javascript
-console.log(elements.tableData);
+console.log(ptd.tableData);
 output:
 [
     {
@@ -35,7 +35,9 @@ output:
 ```
 (2) get info by element's symbol: 
 ``` javascript
-const DsInfo = elements.getInfoBySymbol('Ds');
+const DsInfo = ptd.symbols.Ds;
+or
+const DsInfo = ptd.getInfoBySymbol('Ds');
 console.log(DsInfo);
 output:
 {
@@ -61,13 +63,17 @@ output:
 
 (3) or get info by element's name: 
 ``` javascript
-const infoByName = elements.getInfoByName('Darmstadtium');
+const infoByName = ptd.names.Darmstadtium;
+or
+const infoByName = ptd.getInfoByName('Darmstadtium');
 console.log(infoByName);
 ```
 
 (4) or get info by atomic number: 
 ``` javascript
-const infoByNumber2 = elements.getInfoByAtomicNumber(2);
+const infoByNumber2 = ptd.numbers[2];
+or
+const infoByNumber2 = ptd.getInfoByAtomicNumber(2);
 console.log(infoByNumber2);
 ```
 ## Data
